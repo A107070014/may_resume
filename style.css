@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --backgroud-color:#f0edb8;
+    --main-color:#ffbd59;
+    --content-color:#737373;
+    --title-color:#373741;
+}
+body{
+    margin: 0 ;
+    background-color: var(--title-color);
+}
+.contact{
+    display: flex;
+    min-width: 40px;
+    flex-direction: column;
+    position: fixed;
+    right: 40px;
+    text-align: right;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.contact a{
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-size: 24px;
+    text-decoration: none;  
+}
+.contact a img:hover{
+    width: 40px;
+}
+.contact a:nth-child(3),.contact a:nth-child(4){
+    margin-bottom: 15px;
+}
+.profile{
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+.info{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+#img{
+    width: 120px;
+    height:120px;
+    position:relative;
+    overflow:hidden;
+    right: 60px;
+    top: 60px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+#img>img{
+    width:100%;
+    height:auto;
+    position: absolute;
+    bottom:1px;
+}
+.personal{
+   position: absolute;
+   bottom: 0;
+   left: 80px; 
+}
+.name{
+    color:var(--main-color);
+    font-size: 28.6px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.job{
+    color:var(--backgroud-color);
+    font-size: 15px;
+    font-weight: bold;
+}
+.firstSection{
+    display:flex;
+    border: 5px solid var(--main-color);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    background-color: var(--backgroud-color);
+    flex-wrap: wrap;
+}
+.about{
+    border:5px solid var(--main-color);
+    position: absolute;
+    left:-43px;
+    /*垂直置中 position:absolute;top:0;bottom:0;margin:auto*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 150px;
+    border-radius:5px;
+    color:var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding:20px 10px; 
+    line-height: 35px;
+    z-index: -1;
+}
+.container{
+    width: 400px;
+    padding: 70px 10px 20px 40px;
+}
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    color:var(--title-color);
+    margin-bottom: 10px;
+}
+.content{
+    color: var(--content-color);
+    font-weight: bold;
+    width: 90%;
+    
+}
+.secondSection{
+    border: 5px solid var(--main-color);
+    border-top: transparent;
+    position: relative;
+    background-color: var(--backgroud-color);
+}
+.education{
+    border:5px solid var(--main-color);
+    position: absolute;
+    left:-43px;
+    /*垂直置中 position:absolute;top:0;bottom:0;margin:auto*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 110px;
+    border-radius:5px;
+    color:var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding:18px 10px; 
+    line-height: 35px;
+    z-index: -1;
+}
+.schoolInfo{
+    padding: 35px 87px 35px 35px;
+}
+.highSchool{
+    display: flex;
+    justify-content: space-between;
+}
+.school{
+    display:flex;
+    justify-content: space-between;
+}
+.university{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.schoolName{
+    color: var(--title-color);
+    font-weight:bold;
+}
+.class{
+    color:  var(--content-color);
+    font-weight: bold;
+}
+.date{
+    color: var(--title-color);
+    font-size: 12px;
+}
+.thirdSection{
+    display: flex;
+    border: 5px solid var(--main-color);
+    border-top: transparent;
+    position: relative;
+    background-color: var(--backgroud-color);
+    flex-wrap: wrap;
+}
+.skill{
+    border:5px solid var(--main-color);
+    position: absolute;
+    left:-43px;
+    /*垂直置中 position:absolute;top:0;bottom:0;margin:auto*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 180px;
+    border-radius:5px;
+    color:var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding:50px 10px; 
+    line-height: 35px;
+    z-index: -1;
+}
+.webContainer{
+    flex: 1;
+    padding: 30px 10px 30px 40px;
+}
+.separate{
+    border: 3px solid var(--content-color);
+    border-radius: 5px;
+    background-color:  var(--content-color);
+    width: 250px;
+    text-align: left;
+    margin-left: 0;
+}
+.skillBar{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+.progressBarHtml,.progressBarCss,.progressBarJs,
+.progressBarJsp,.progressBarMssql,.progressBarJquery{
+    background: #333;
+    border-radius: 13px;
+    height: 25px;
+    width: 50%;
+    overflow: hidden;
+}
+.progressBarJquery{
+    margin-left: 5px;
+}
+.progressBarJsp,.progressBarMssql{
+    margin-left: 10px;
+}
+.progressBarHtml::after,.progressBarCss::after,.progressBarJs::after
+,.progressBarJsp::after,.progressBarMssql::after,.progressBarJquery::after{
+    content: '';
+    display: block;
+    background: orange;
+    width: 90%;
+    height: 100%;
+    border-radius: 9px;
+}
+.progressBarCss::after{
+    width: 70%;
+}
+.progressBarJs::after{
+    width: 30%;
+}
+.progressBarJsp::after{
+    width: 50%;
+}
+.progressBarMssql::after{
+    width: 50%;
+}
+.progressBarJquery::after{
+    width: 30%;
+}
+.fourthSection{
+    border: 5px solid var(--main-color);
+    border-top: transparent;
+    border-radius: 0 0 5px 5px ;
+    position: relative;
+    background-color: var(--backgroud-color);
+    padding: 40px 80px 40px 40px;
+}
+.web{
+    border:5px solid var(--main-color);
+    position: absolute;
+    left:-43px;
+    /*垂直置中 position:absolute;top:0;bottom:0;margin:auto*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 280px;
+    border-radius:5px;
+    color:var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding:50px 10px; 
+    line-height: 35px;
+    z-index: -1;
+}
+.worksImg{
+    width: 100%;
+    min-width: 500px;
+    padding: 10px 60px 10px 10px;
+}
+.worksImg img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.awardImg{
+    width: 50%;
+    min-width: 250px;
+    text-align: end;
+    margin-top: 100px;
+}
+.awardImg img{
+    border-radius: 5px;
+}
+.webInfo{
+    line-height: 35px;
+}
+.worklist{
+    display: flex;
+    justify-content: space-between;
+}
+.works{
+    font-weight: bold;
+    color: var(--title-color);
+}
+.work{
+    font-weight: bold;
+    color: var(--content-color);
+}
+ul{
+    list-style-type: disc;
+    font-weight: bold;
+}
+li{
+    color: var(--content-color);
+}
+#goTop{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
