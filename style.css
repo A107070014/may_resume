@@ -28,13 +28,16 @@ body{
     position: relative;
 }
 .contact .telephone > span{
+    height: auto;
     position: absolute;
-    left: 80px;
+    left: 40px;
+    visibility: hidden;
     bottom: 5px;
-    transition: all 0.5s;
+    transition: left 0.5s;
 }
 .contact .telephone:hover > span{
     position: absolute;
+    visibility: visible;
     left: -80px;
     bottom: 10px;
 }
@@ -65,11 +68,13 @@ body{
     max-width: 850px;
     margin: 0 auto;
     margin-bottom: 130px;
+    z-index: -1;
 }
 .info{
     display: flex;
     align-items: baseline;
     position: relative;
+    z-index: -1;
 }
 #img{
     width: 120px;
@@ -111,6 +116,7 @@ body{
     position: relative;
     background-color: var(--backgroud-color);
     flex-wrap: wrap;
+    z-index: -2;
 }
 .about{
     border:5px solid var(--main-color);
@@ -174,6 +180,7 @@ body{
 .highSchool{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .school{
     display:flex;
@@ -182,6 +189,7 @@ body{
 .university{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 .schoolName{
@@ -195,6 +203,8 @@ body{
 .date{
     color: var(--title-color);
     font-size: 12px;
+    width: 70.68px;
+    text-align: end;
 }
 .thirdSection{
     display: flex;
@@ -285,7 +295,7 @@ body{
     border-radius: 0 0 5px 5px ;
     position: relative;
     background-color: var(--backgroud-color);
-    padding: 40px 80px 40px 40px;
+    padding: 40px;
 }
 .web{
     border:5px solid var(--main-color);
@@ -307,7 +317,7 @@ body{
 .worksImg{
     width: 100%;
     min-width: 500px;
-    padding: 10px 60px 10px 10px;
+    padding: 10px 10px 10px 0px;
 }
 .worksImg img{
     border-radius: 10px;
@@ -324,10 +334,13 @@ body{
 }
 .webInfo{
     line-height: 35px;
+    color: var(--content-color);
+    font-weight: bold;
 }
 .worklist{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .works{
     font-weight: bold;
@@ -356,4 +369,114 @@ li{
     bottom: 30px;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+/* RWD */
+@media (max-width:1290px){
+    .contact{
+        flex-direction: initial;
+        transform:initial;
+        top: 15px;
+        right: 10px;
+        align-items: center;
+        justify-content: space-around;
+        width: 200px;
+    }
+    .contact .telephone > img {
+        position: initial;
+        transition: all 0.5s;
+    }
+    .contact a:nth-child(4) {
+        margin-left: -6px;
+    }
+    .contact .telephone:hover > span{
+        left: -110px;
+        bottom: -10px;
+    }
+    .contact .telephone > img{
+        bottom: -15px;
+    }
+    .contact .telephone:hover img{
+        bottom: -15px;
+    }
+}
+@media (max-width:1024px) {
+    .profile{
+        max-width: 600px;
+    }
+    .container{
+        width: 100%;
+    }
+    .firstSection > div:nth-child(3){
+        padding: 20px 10px 20px 40px;
+    }
+    .awardImg {
+        width: 75%;
+        min-width: 250px;
+        margin-top: 0px;
+        text-align: left;
+    }
+}
+
+@media (max-width:768px) {
+    .profile{
+       width: 80%;
+    }
+    .worksImg{
+        min-width: 250px;
+        width: 100%;
+    }
+    #img{
+        right: 30px;
+    }
+    .personal{
+        left: 110px;
+    }
+}
+
+@media (max-width:436px) {
+    .profile{
+        position: absolute;
+        right: 23px;
+    }
+    #img{
+        right: 20px;
+    }
+    .personal{
+        left: 110px;
+    }
+    .job{
+        display: block;
+        margin-left: 45px;
+    }
+    .date{
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 3px;
+    }
+    .worksImg{
+        min-width: 200px;
+        width: 100%;
+    }
+    .awardImg {
+        width: 75%;
+        min-width: 180px;
+        margin-top: 0px;
+        text-align: left;
+    }
+    .separate {
+        width: 180px;
+    }
+    .fourthSection{
+        padding: 20px ;
+    }
+    .contact .telephone > span{
+        display: none;
+    }
+    .contact .telephone:hover img{
+        position: initial;
+    }
+    .contact a:hover img{
+        width: 30px;
+    }
 }
