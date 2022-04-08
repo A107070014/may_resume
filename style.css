@@ -133,7 +133,7 @@ body{
     font-weight: bold;
     padding:20px 10px; 
     line-height: 35px;
-    z-index: -1;
+border-right-width: 0;
 }
 .container{
     width: 400px;
@@ -374,6 +374,7 @@ li{
 /* RWD */
 @media (max-width:1290px){
     .contact{
+        position: absolute;
         flex-direction: initial;
         transform:initial;
         top: 15px;
