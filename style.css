@@ -133,7 +133,7 @@ body{
     font-weight: bold;
     padding:20px 10px; 
     line-height: 35px;
-border-right-width: 0;
+    border-right-width: 0;
 }
 .container{
     width: 400px;
@@ -384,21 +384,20 @@ li{
         width: 200px;
     }
     .contact .telephone > img {
-        position: initial;
-        transition: all 0.5s;
+        bottom: -10px;
     }
-    .contact a:nth-child(4) {
-        margin-left: -6px;
+    .contact .telephone:hover img{
+        bottom: -15px;
+    }
+    .contact .telephone > span{
+        left: 0px;
     }
     .contact .telephone:hover > span{
         left: -110px;
         bottom: -10px;
     }
-    .contact .telephone > img{
-        bottom: -15px;
-    }
-    .contact .telephone:hover img{
-        bottom: -15px;
+    .contact a:nth-child(4) {
+        margin-left: -6px;
     }
 }
 @media (max-width:1024px) {
