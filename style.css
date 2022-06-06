@@ -38,7 +38,7 @@ body{
 .contact .telephone:hover > span{
     position: absolute;
     visibility: visible;
-    left: -80px;
+    left: -70px;
     bottom: 10px;
 }
 .contact .telephone > img{
