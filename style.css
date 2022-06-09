@@ -38,7 +38,7 @@ body{
 .contact .telephone:hover > span{
     position: absolute;
     visibility: visible;
-    left: -70px;
+    left: -80px;
     bottom: 10px;
 }
 .contact .telephone > img{
@@ -157,7 +157,7 @@ body{
     position: relative;
     background-color: var(--backgroud-color);
 }
-.education{
+.education,.experience{
     border:5px solid var(--main-color);
     position: absolute;
     left:-43px;
@@ -177,12 +177,12 @@ body{
 .schoolInfo{
     padding: 35px 87px 35px 35px;
 }
-.highSchool{
+.highSchool,.company{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.school{
+.school,.companyInfo{
     display:flex;
     justify-content: space-between;
 }
@@ -192,19 +192,28 @@ body{
     flex-wrap: wrap;
     margin-top: 30px;
 }
-.schoolName{
+.schoolName,.companyName{
     color: var(--title-color);
     font-weight:bold;
 }
-.class{
+.class,.carer{
     color:  var(--content-color);
     font-weight: bold;
 }
 .date{
     color: var(--title-color);
     font-size: 12px;
-    width: 70.68px;
+    /* width: 70.68px; */
     text-align: end;
+}
+.workInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 87px 35px 35px;
+}
+.workList{
+    padding: 0 0 0 20px;
 }
 .thirdSection{
     display: flex;
@@ -248,34 +257,31 @@ body{
     margin-top: 25px;
     align-items: center;
 }
-.progressBarHtml,.progressBarCss,.progressBarJs,
-.progressBarJsp,.progressBarMssql,.progressBarJquery,.progressBarPhotoshop{
+.progressBarFontEnd,.progressBarJquery,.progressBarPS,
+.progressBarJsp,.progressBarMssql,.progressBarReact{
     background: #333;
     border-radius: 13px;
     height: 25px;
     width: 50%;
     overflow: hidden;
 }
-.progressBarJquery{
-    margin-left: 5px;
-}
 .progressBarJsp,.progressBarMssql{
     margin-left: 10px;
 }
-.progressBarHtml::after,.progressBarCss::after,.progressBarJs::after
-,.progressBarJsp::after,.progressBarMssql::after,.progressBarJquery::after,.progressBarPhotoshop::after{
+.progressBarFontEnd::after,.progressBarJquery::after,.progressBarPS::after
+,.progressBarJsp::after,.progressBarMssql::after,.progressBarReact::after{
     content: '';
     display: block;
     background: orange;
-    width: 90%;
+    width: 80%;
     height: 100%;
     border-radius: 9px;
 }
-.progressBarCss::after{
-    width: 70%;
+.progressBarJquery::after{
+    width: 40%;
 }
-.progressBarJs::after{
-    width: 30%;
+.progressBarPS::after{
+    width: 50%;
 }
 .progressBarJsp::after{
     width: 50%;
@@ -283,11 +289,8 @@ body{
 .progressBarMssql::after{
     width: 50%;
 }
-.progressBarJquery::after{
-    width: 30%;
-}
-.progressBarPhotoshop::after{
-    width: 50%;
+.progressBarReact::after{
+    width: 40%;
 }
 .fourthSection{
     border: 5px solid var(--main-color);
@@ -301,11 +304,8 @@ body{
     border:5px solid var(--main-color);
     position: absolute;
     left:-43px;
-    /*垂直置中 position:absolute;top:0;bottom:0;margin:auto*/
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 280px;
+    top:100px;
+    height: 220px;
     border-radius:5px;
     color:var(--main-color);
     font-size: 16px;
@@ -313,42 +313,6 @@ body{
     padding:50px 10px; 
     line-height: 35px;
     z-index: -1;
-}
-.worksImg{
-    width: 100%;
-    min-width: 500px;
-    padding: 10px 10px 10px 0px;
-}
-.worksImg img{
-    border-radius: 10px;
-    cursor: pointer;
-}
-.awardImg{
-    width: 50%;
-    min-width: 250px;
-    text-align: end;
-    margin-top: 100px;
-}
-.awardImg img{
-    border-radius: 5px;
-}
-.webInfo{
-    line-height: 35px;
-    color: var(--content-color);
-    font-weight: bold;
-}
-.worklist{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.works{
-    font-weight: bold;
-    color: var(--title-color);
-}
-.work{
-    font-weight: bold;
-    color: var(--content-color);
 }
 ul{
     list-style-type: disc;
@@ -393,8 +357,8 @@ li{
         left: 0px;
     }
     .contact .telephone:hover > span{
-        left: -110px;
-        bottom: -10px;
+        left: -120px;
+        bottom: -13px;
     }
     .contact a:nth-child(4) {
         margin-left: -6px;
