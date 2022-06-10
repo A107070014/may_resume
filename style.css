@@ -482,7 +482,7 @@ li{
 }
 @media (max-width:375px) {
     .workList{
-        padding-left: 60px;    
+        padding-left: 50px;    
     }
     .work:nth-child(2)>.webWork>ol>li:nth-child(3){
         width: 75%;
