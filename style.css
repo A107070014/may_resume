@@ -149,6 +149,7 @@ body{
     color: var(--content-color);
     font-weight: bold;
     width: 90%;
+    text-align: justify;
     
 }
 .secondSection{
@@ -321,7 +322,6 @@ body{
 }
 .work{
     display: flex;
-    align-items: center;
     width: 100%;
     margin: 35px 0 ;
     flex-wrap: wrap;
@@ -477,7 +477,7 @@ li{
         line-height: 35px;
     }
     .work:nth-child(2)>.webWork>ol>li:nth-child(3){
-        width: 235px;
+        width: 250px;
     }
 }
 @media (max-width:375px) {
@@ -485,6 +485,6 @@ li{
         padding-left: 60px;    
     }
     .work:nth-child(2)>.webWork>ol>li:nth-child(3){
-        width: 80%;
+        width: 75%;
     }
 }
